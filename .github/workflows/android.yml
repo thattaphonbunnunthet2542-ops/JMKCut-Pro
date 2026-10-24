@@ -22,6 +22,5 @@ jobs:
 
       - name: Check project files
         run: |
-          echo "Checking JamesCut Pro project"
-          find . -maxdepth 4 -type f
-          
+          echo "Checking JMKCut Pro project"
+          find . -maxdepth 5 -type f
