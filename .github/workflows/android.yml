@@ -1,0 +1,27 @@
+
+name: Build JamesCut Pro APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Check project files
+        run: |
+          echo "Checking JamesCut Pro project"
+          find . -maxdepth 4 -type f
+          
