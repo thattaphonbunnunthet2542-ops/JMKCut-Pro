@@ -1,5 +1,5 @@
 
-name: Build JamesCut Pro APK
+name: Build JMKCut Pro APK
 
 on:
   workflow_dispatch:
